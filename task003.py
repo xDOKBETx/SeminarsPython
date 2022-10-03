@@ -10,3 +10,17 @@ if a % 1 != 0:
     print(int(b % 10))
 else:
     print("Нет")
+
+
+#############################################################################################################
+
+def show_number(n):
+    number = int(n % int(n) * 10)
+    if number == 0:
+        return "Нет"
+    else:
+        return number
+
+
+n = float(input("Введите число: "))
+print(show_number(n))
