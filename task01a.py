@@ -36,3 +36,23 @@ try:
     seek_squares(a, b)
 except:
     print("Надо вводить целые числа!")
+
+
+#####################################################################################################################
+
+def seek_squares(num1, num2):
+    seek = False
+    if num1 * num1 == num2 or num2 * num2 == num1:
+        seek = True
+    return seek
+
+
+try:
+    a = int(input("Введите число a: "))
+    b = int(input("Введите число b: "))
+    if seek_squares(a, b):
+        print("Да")
+    else:
+        print("Нет")
+except:
+    print("Надо вводить целые числа!")
